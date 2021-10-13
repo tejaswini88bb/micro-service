@@ -8,10 +8,10 @@ export default ({ comments }) => {
             content = comment.content;
         }
         if(comment.status === 'rejected') {
-            content = 'this commen has been rejected';
+            content = 'this comment has been rejected';
         } 
         if(comment.status === 'pending') {
-            content = 'this commen has been awaiting moderation';
+            content = 'this comment has been awaiting moderation';
         }
         return <li key={comment.id} >{content}</li>;
     });
